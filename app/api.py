@@ -13,4 +13,4 @@ def create_reservation():
         reservations.append(data)
         return jsonify({"message": "Reservation successful"}), 201
     else:
-        return jsonify({"message": "Room not available"}), 400
+        return jsonify({"message": "Room not available"}), 409
